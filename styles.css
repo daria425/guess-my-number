@@ -90,7 +90,8 @@ h1 {
   box-shadow: 10px 5px 0px #003761;
   background-color: #da4e7d;
   color: #fff5e4;
-  margin-top: 2rem;
+  margin-top: -10px;
+  display: none;
 }
 
 .user-guess {
