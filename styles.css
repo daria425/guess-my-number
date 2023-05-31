@@ -15,13 +15,13 @@ body {
 .top {
   position: relative;
   height: 35vh;
+  margin-bottom: 1rem;
 }
 
 .main-content {
   height: 65vh;
   display: flex;
   justify-content: space-around;
-  padding-top: 6rem;
 }
 
 .left {
@@ -53,9 +53,9 @@ h1 {
 
 .number {
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   font-family: "VT323", monospace;
   font-size: 10rem;
   background-color: #003761;
