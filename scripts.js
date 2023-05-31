@@ -23,16 +23,14 @@ function endGame() {
 
 document.querySelector(".check").addEventListener("click", function () {
   let chosenNumber = myNumber(myNumberArray);
-  setTimeout(() => {
-    document.querySelector(".number").innerHTML = chosenNumber;
-    if (guess === chosenNumber) {
-      document.querySelector(".message").textContent = "Correct!";
-    } else {
-      document.querySelector(".message").textContent = "Wrong!";
-      document.querySelector(".score").textContent = --guessesLeft;
-    }
-    endGame();
-  }, 1000);
+  document.querySelector(".number").innerHTML = chosenNumber;
+  if (guess === chosenNumber) {
+    document.querySelector(".message").textContent = "Correct!";
+  } else {
+    document.querySelector(".message").textContent = "Wrong!";
+    document.querySelector(".score").textContent = --guessesLeft;
+  }
+  endGame();
 });
 //player chooses number between one and 20,
 //function runs for computer to choose random number
